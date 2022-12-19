@@ -1,0 +1,246 @@
+
+extends ../layouts/main
+
+block content
+  .container
+    h2.title-2.text-center.wow.fadeInBot.animdel-1 How does our mockup API compare to the others?
+    p.suitability__subtitle.wow.fadeInBot.animdel-2 You’ll be the judge here. With speed, lots of customization options, template count and ease of integration – there’s only one clear winner
+    .compare-wrapper
+      .compare
+        .compare__head.compare-head
+          .compare__row
+            .compare__cell  Shopify App
+            .compare__cell
+              .compare__brand-content 
+                span Printegy
+                .compare__brand-image
+                  img.compare__brand-image-src(src=require('@/images/p-logo.svg'), alt="")
+            .compare__cell  Printful
+            .compare__cell  ShirtiGo
+            .compare__cell Shirtee.Cloud
+        .compare__body
+          .compare__row
+            .compare__cell
+              .compare__cell-content
+                .compare__cell-heading  Base T-Shirt price
+            .compare__cell
+              .compare__cell-content
+                .compare__cell-heading  6.95€
+            .compare__cell
+              .compare__cell-content
+                .compare__cell-heading  11.75€
+            .compare__cell
+              .compare__cell-content
+                .compare__cell-heading  16.79€ (Excl. VAT)
+            .compare__cell
+              .compare__cell-content
+                .compare__cell-heading  9.89€ (Excl. VAT)
+          .compare__row
+            .compare__cell
+              .compare__cell-content
+                .compare__cell-heading  Mug price
+            .compare__cell
+              .compare__cell-content
+                .compare__cell-heading  4.95€
+            .compare__cell
+              .compare__cell-content
+                .compare__cell-heading  7.25€
+            .compare__cell
+              .compare__cell-content
+                .compare__cell-heading  7.25€ (5.62€)
+            .compare__cell
+              .compare__cell-content
+                .compare__cell-heading  5.88€ (Excl. VAT)
+          .compare__row
+            .compare__cell
+              .compare__cell-content
+                .compare__cell-heading Production time
+            .compare__cell
+              .compare__cell-content
+                .compare__cell-heading 3-4 days
+            .compare__cell
+              .compare__cell-content
+                .compare__cell-heading 3-7 days
+            .compare__cell
+              .compare__cell-content
+                .compare__cell-heading 7-10 days
+            .compare__cell
+              .compare__cell-content
+                .compare__cell-heading  5-10 days
+          .compare__row
+            .compare__cell
+              .compare__cell-content
+                .compare__cell-heading  Range width
+            .compare__cell
+              .compare__cell-content
+                .compare__cell-heading  >25
+            .compare__cell
+              .compare__cell-content
+                .compare__cell-heading  >300
+            .compare__cell
+              .compare__cell-content
+                .compare__cell-heading  >30
+            .compare__cell
+              .compare__cell-content
+                .compare__cell-heading  >100
+          .compare__row      
+            .compare__cell
+              .compare__cell-content
+                .compare__cell-heading  Manufactured in
+            .compare__cell
+              .compare__cell-content
+                .compare__cell-heading  Germany
+            .compare__cell
+              .compare__cell-content
+                .compare__cell-heading  Latvia, Spain
+            .compare__cell
+              .compare__cell-content
+                .compare__cell-heading  Germany
+            .compare__cell
+              .compare__cell-content
+                .compare__cell-heading  Germany
+          .compare__row      
+            .compare__cell
+              .compare__cell-content
+                .compare__cell-heading  Mockup choices
+            .compare__cell
+              .compare__cell-content
+                .compare__cell-icon
+                  img.compare__cell-icon-src(src=require('@/images/check.svg'), alt="")
+            .compare__cell
+              .compare__cell-content
+                .compare__cell-icon
+                  img.compare__cell-icon-src(src=require('@/images/check.svg'), alt="")
+            .compare__cell
+              .compare__cell-content
+                .compare__cell-icon
+                  img.compare__cell-icon-src(src=require('@/images/deny.svg'), alt="")
+            .compare__cell
+              .compare__cell-content
+                .compare__cell-icon
+                  img.compare__cell-icon-src(src=require('@/images/deny.svg'), alt="")
+          .compare__row      
+            .compare__cell
+              .compare__cell-content
+                .compare__cell-heading  Tracking
+            .compare__cell
+              .compare__cell-content
+                .compare__cell-icon
+                  img.compare__cell-icon-src(src=require('@/images/check.svg'), alt="")
+                .compare__cell-heading  included in the price
+            .compare__cell
+              .compare__cell-content
+                .compare__cell-icon
+                  img.compare__cell-icon-src(src=require('@/images/deny.svg'), alt="")
+                .compare__cell-heading  not included in the price
+            .compare__cell
+              .compare__cell-content
+                .compare__cell-icon
+                  img.compare__cell-icon-src(src=require('@/images/deny.svg'), alt="")
+                .compare__cell-heading  not included in the price
+            .compare__cell
+              .compare__cell-content
+                .compare__cell-icon
+                  img.compare__cell-icon-src(src=require('@/images/deny.svg'), alt="")
+                .compare__cell-heading  not included in the price
+
+          .compare__row      
+            .compare__cell
+              .compare__cell-content
+                .compare__cell-heading  Design-Service
+            .compare__cell
+              .compare__cell-content
+                .compare__cell-icon
+                  img.compare__cell-icon-src(src=require('@/images/check.svg'), alt="")
+            .compare__cell
+              .compare__cell-content
+                .compare__cell-icon
+                  img.compare__cell-icon-src(src=require('@/images/deny.svg'), alt="")
+            .compare__cell
+              .compare__cell-content
+                .compare__cell-icon
+                  img.compare__cell-icon-src(src=require('@/images/deny.svg'), alt="")
+            .compare__cell
+              .compare__cell-content
+                .compare__cell-icon
+                  img.compare__cell-icon-src(src=require('@/images/deny.svg'), alt="")
+    .calculate-table
+      .calculate-table__first
+        .calculate-table__title Calculations (Hoodie)
+        .calculate-table__desc Let's make a complete calculation of production and delivery to the end customer using a hoodie as an example
+      .calculate-table__content.table-grid
+        .table-grid__col 
+          .table-grid__item
+            .table-grid__price 29.00€
+            .table-grid__text Product cost
+          .table-grid__item
+            .table-grid__price 29.00€
+            .table-grid__text Product cost
+          .table-grid__item
+            .table-grid__price 29.00€
+            .table-grid__text Product cost
+          .table-grid__item
+            .table-grid__price 29.00€
+            .table-grid__text Product cost
+          .table-grid__item
+            .table-grid__price 29.00€
+            .table-grid__text Product cost
+          .table-grid__item.table-grid__item--get-started
+            .table-grid__price 29.00€
+            a.table-grid__button(href="#")  Get started
+        .table-grid__col 
+          .table-grid__item
+            .table-grid__price 29.00€
+            .table-grid__text Product cost
+          .table-grid__item
+            .table-grid__price 29.00€
+            .table-grid__text Product cost
+          .table-grid__item
+            .table-grid__price 29.00€
+            .table-grid__text Product cost
+          .table-grid__item
+            .table-grid__price 29.00€
+            .table-grid__text Product cost
+          .table-grid__item
+            .table-grid__price 29.00€
+            .table-grid__text Product cost
+          .table-grid__item.table-grid__item--summary
+            .table-grid__price 78.25€
+        .table-grid__col 
+          .table-grid__item
+            .table-grid__price 29.00€
+            .table-grid__text Product cost
+          .table-grid__item
+            .table-grid__price 29.00€
+            .table-grid__text Product cost
+          .table-grid__item
+            .table-grid__price 29.00€
+            .table-grid__text Product cost
+          .table-grid__item
+            .table-grid__price 29.00€
+            .table-grid__text Product cost
+          .table-grid__item
+            .table-grid__price 29.00€
+            .table-grid__text Product cost
+          .table-grid__item.table-grid__item--summary
+            .table-grid__price 80.75€
+        .table-grid__col 
+          .table-grid__item
+            .table-grid__price 29.00€
+            .table-grid__text Product cost
+          .table-grid__item
+            .table-grid__price 29.00€
+            .table-grid__text Product cost
+          .table-grid__item
+            .table-grid__price 29.00€
+            .table-grid__text Product cost
+          .table-grid__item
+            .table-grid__price 29.00€
+            .table-grid__text Product cost
+          .table-grid__item
+            .table-grid__price 29.00€
+            .table-grid__text Product cost
+          .table-grid__item.table-grid__item--summary
+            .table-grid__price 99.69€
+              br
+              | (Excl. VAT)
